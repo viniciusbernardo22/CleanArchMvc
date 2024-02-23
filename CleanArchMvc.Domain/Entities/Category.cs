@@ -33,5 +33,10 @@ namespace CleanArchMvc.Domain.Entities
 
             Name = name;
         }
+
+        public void Update(string name)
+        {
+            ValidateDomain(name);
+        }
     }
 }
