@@ -12,7 +12,7 @@ namespace CleanArchMvc.Domain.Entities
         
         public Product(int id, string name, string description, decimal price, int stock, string image)
         {
-            DomainExceptionValidation.When(id < 0, "Invalid Id value.");
+            DomainExceptionValidation.When(id < 0, "Invalid Id value");
             Id = id;
             ValidateDomain(name,description, price, stock, image);
         }
@@ -38,7 +38,7 @@ namespace CleanArchMvc.Domain.Entities
             
             DomainExceptionValidation.When(stock < 0, "Invalid stock value");
 
-            DomainExceptionValidation.When(image.Length > 250, "Invalid image name, maximum image name: 250 characters");
+            DomainExceptionValidation.When(image?.Length > 250, "Invalid image name, maximum image name: 250 characters");
             
             Name = name;
             Description = description;
@@ -50,7 +50,7 @@ namespace CleanArchMvc.Domain.Entities
         public void Update(int id, string name, string description, decimal price, int stock, string image, int categoryId)
         {
             ValidateDomain(name,description, price, stock, image);
-            CategoryId = CategoryId;
+            CategoryId = categoryId;
         }
 
     }
