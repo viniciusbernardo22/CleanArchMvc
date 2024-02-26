@@ -23,5 +23,32 @@ namespace CleanArchMvc.Domain.Tests
                 .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
                 .WithMessage("Invalid Id value");
         }
+        
+        [Fact(DisplayName = "Throw error when try to create instance with short name")]
+        public void CreateCategory_ShortNameValue_DomainExceptionShortName()
+        {
+            Action action = () => new Category(1, "Ca");
+            action.Should()
+                .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+                .WithMessage("Invalid name, Name is too short and require the minimum of 3 characters");
+        }
+        
+        [Fact(DisplayName = "Throw error when try to create instance with missing name value")]
+        public void CreateCategory_MissingNameValue_DomainExceptionRequiredName()
+        {
+            Action action = () => new Category(1, "");
+            action.Should()
+                .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+                .WithMessage("Invalid name, Name is Required");
+        }
+        
+        [Fact(DisplayName = "Throw error when try to create instance with name as null")]
+        public void CreateCategory_MissingNameValue_DomainExceptionRequiredName2()
+        {
+            Action action = () => new Category(1, null);
+            action.Should()
+                .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+                .WithMessage("Invalid name, Name is Required");
+        }
     }
 }
