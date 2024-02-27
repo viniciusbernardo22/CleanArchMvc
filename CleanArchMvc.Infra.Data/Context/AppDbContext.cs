@@ -12,7 +12,7 @@ namespace CleanArchMvc.Infra.Data.Context
 
          public DbSet<Category> Categories;
          public DbSet<Product> Products;
-
+         
          protected override void OnModelCreating(ModelBuilder modelBuilder)
          {
              base.OnModelCreating(modelBuilder);
