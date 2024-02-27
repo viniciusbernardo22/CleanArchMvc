@@ -118,7 +118,7 @@
       "code": "NU1604",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "A dependência do projeto Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation não contém nenhum limite inferior inclusivo. Inclua um limite inferior na versão de dependência para assegurar resultados de restauração coerentes.",
+      "message": "Project dependency Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
       "libraryId": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation",
       "targetGraphs": [
         ".NETCoreApp,Version=v5.0"
