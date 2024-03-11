@@ -393,3 +393,4 @@ C:\Users\Usuario\Desktop\Courses\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net5.
 C:\Users\Usuario\Desktop\Courses\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Usuario\Desktop\Courses\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Usuario\Desktop\Courses\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net5.0\ref\CleanArchMvc.WebUI.dll
+C:\Users\Usuario\Desktop\Courses\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net5.0\AutoMapper.dll
