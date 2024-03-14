@@ -6,15 +6,15 @@ namespace CleanArchMvc.Domain.Interfaces
 {
     public interface ICategoryRepository
     {
-        Task<IEnumerable<Category>> GetCategories();
+        Task<IEnumerable<Category>> GetCategoriesAsync();
 
-        Task<Category> GetbyId(int id);
+        Task<Category> GetbyIdAsync(int id);
 
-        Task<Category> Create(Category category);
+        Task<Category> CreateAsync(Category category);
         
-        Task<Category> Update(Category category);
+        Task<Category> UpdateAsync(Category category);
         
-        Task<Category> Delete(Category category);
+        Task<Category> DeleteAsync(Category category);
 
     }
 }
