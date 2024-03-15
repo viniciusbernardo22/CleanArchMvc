@@ -11,4 +11,24 @@
     <ItemGroup>
       <ProjectReference Include="..\CleanArchMvc.Infra.IoC\CleanArchMvc.Infra.IoC.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Views\Categories\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Views\Categories\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Views\Categories\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Views\Categories\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Categories\index.cshtml" />
+    </ItemGroup>
 </Project>

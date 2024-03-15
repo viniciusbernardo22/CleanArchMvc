@@ -17,8 +17,14 @@ namespace CleanArchMvc.Infra.Data.Repositories
         }
         
         public async Task<Category> GetbyIdAsync(int id) => await _context.Categories.FindAsync(id);
-        
-        public async Task<IEnumerable<Category>> GetCategoriesAsync() => await _context.Categories.ToListAsync();
+
+        public async Task<IEnumerable<Category>> GetCategoriesAsync()
+        {
+            
+            return await _context.Categories.ToListAsync();
+        }
+
+      
         
         public async Task<Category> CreateAsync(Category category)
         {
